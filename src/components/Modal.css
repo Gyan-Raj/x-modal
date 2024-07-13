@@ -1,0 +1,57 @@
+.modal {
+  font-family: "Times New Roman", Times, serif;
+}
+button {
+  background-color: rgb(0, 123, 255);
+  border-radius: 4px;
+  color: white;
+  border: 0;
+  padding: 8px 16px;
+}
+.modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content > form {
+  width: 50%;
+  height: 75%;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.modal-content > form > div {
+  width: 90%;
+}
+label {
+  font-weight: 600;
+}
+input {
+  width: 85%;
+  height: 85%;
+  border-radius: 4px;
+  background: transparent;
+  padding-left: 8px;
+  border: 1px solid black;
+  font-family: "Times New Roman", Times, serif;
+}
+input:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .modal-content > form {
+    width: 80%;
+  }
+}
