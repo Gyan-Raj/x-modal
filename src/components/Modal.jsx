@@ -30,7 +30,8 @@ const Modal = () => {
     }
   };
 
-  let handleModal = () => {
+  let handleModal = (e) => {
+    e.stopPropagation();
     setIsModalOpen(false);
   };
 
