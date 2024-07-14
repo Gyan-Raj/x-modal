@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Modal from "./components/Modal";
+import XModal from "./components/XModal";
 
 function App() {
   return (
     <div className="App">
-      <Modal />
+      <XModal />
     </div>
   );
 }
