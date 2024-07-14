@@ -55,8 +55,8 @@ const XModal = () => {
     <div className="modal" onClick={handleParent}>
       <h1>User Details Modal</h1>
       <button onClick={() => setIsModalOpen(true)}>Open Form</button>
-      {isModalOpen && (
-        <div className="modal-content">
+      <div className="modal-content">
+        {isModalOpen && (
           <Modal
             formData={formData}
             handleSubmit={handleSubmit}
@@ -64,8 +64,8 @@ const XModal = () => {
             handleFormModal={handleFormModal}
             handleChange={handleChange}
           />
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
