@@ -51,13 +51,15 @@ const XModal = () => {
         <h1>User Details Modal</h1>
         <button onClick={() => setIsModalOpen(true)}>Open Form</button>
         {isModalOpen && (
-          <Modal
-            formData={formData}
-            handleSubmit={handleSubmit}
-            handleModal={handleModal}
-            handleFormModal={handleFormModal}
-            handleChange={handleChange}
-          />
+          <div className="modal-content">
+            <Modal
+              formData={formData}
+              handleSubmit={handleSubmit}
+              handleModal={handleModal}
+              handleFormModal={handleFormModal}
+              handleChange={handleChange}
+            />
+          </div>
         )}
       </div>
     </div>
