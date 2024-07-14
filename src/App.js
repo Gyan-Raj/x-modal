@@ -4,9 +4,9 @@ import XModal from "./components/XModal";
 
 function App() {
   return (
-    <div className="App">
-      <XModal />
-    </div>
+    // <div className="App">
+    <XModal />
+    // </div>
   );
 }
 
