@@ -45,7 +45,7 @@ const Modal = () => {
   };
 
   return (
-    <div className="modal">
+    <div className="modal" onClick={handleModal}>
       <h1>User Details Modal</h1>
       <button onClick={() => setIsModalOpen(true)}>Open Form</button>
       {isModalOpen && (
