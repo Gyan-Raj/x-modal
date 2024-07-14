@@ -12,7 +12,7 @@ const Modal = () => {
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.userContactNo === "" || formData.userContactNo.length < 10) {
+    if (formData.userContactNo === "" || formData.userContactNo.length !== 10) {
       alert("Invalid phone number. Please enter a 10-digit phone number.");
     } else if (
       new Date(formData.userDob).getFullYear() > new Date().getFullYear() ||
