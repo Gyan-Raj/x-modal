@@ -32,7 +32,7 @@ const XModal = () => {
   };
 
   let handleModal = (e) => {
-    e.stopPropagation();
+    // e.stopPropagation();
     setIsModalOpen(false);
   };
 
@@ -44,24 +44,28 @@ const XModal = () => {
     let { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
+  let handleParent = () => {
+    if (isModalOpen) {
+      setIsModalOpen(false);
+      console.log(2);
+    }
+  };
 
   return (
-    <div>
-      <div className="modal">
-        <h1>User Details Modal</h1>
-        <button onClick={() => setIsModalOpen(true)}>Open Form</button>
-        {isModalOpen && (
-          <div className="modal-content">
-            <Modal
-              formData={formData}
-              handleSubmit={handleSubmit}
-              handleModal={handleModal}
-              handleFormModal={handleFormModal}
-              handleChange={handleChange}
-            />
-          </div>
-        )}
-      </div>
+    <div className="modal" onClick={handleParent}>
+      <h1>User Details Modal</h1>
+      <button onClick={() => setIsModalOpen(true)}>Open Form</button>
+      {isModalOpen && (
+        <div className="modal-content">
+          <Modal
+            formData={formData}
+            handleSubmit={handleSubmit}
+            handleModal={handleModal}
+            handleFormModal={handleFormModal}
+            handleChange={handleChange}
+          />
+        </div>
+      )}
     </div>
   );
 };
