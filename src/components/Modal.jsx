@@ -51,7 +51,7 @@ const Modal = () => {
       {isModalOpen && (
         <div className="modal-content" onClick={handleModal}>
           <form action="" onSubmit={handleSubmit} onClick={handleFormModal}>
-            <h1>Form Details</h1>
+            <h1>Fill Details</h1>
             <div>
               <label htmlFor="">Username:</label>
               <br />
