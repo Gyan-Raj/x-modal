@@ -8,7 +8,7 @@ const Modal = ({
   handleChange,
 }) => {
   return (
-    <div onClick={handleModal}>
+    <div onClick={handleModal} className="modal-form">
       <form action="" onSubmit={handleSubmit} onClick={handleFormModal}>
         <h1>Fill Details</h1>
         <div>
